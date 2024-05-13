@@ -1,0 +1,123 @@
+[
+    {
+      "id": 1,
+      "bannerUrl": "https://example.com/banner1.jpg",
+      "jobTitle": "Software Engineer",
+      "loggedInUser": {
+        "name": "John Doe",
+        "email": "john@example.com"
+      },
+      "category": "On Site",
+      "salaryRange": "$70,000 - $90,000",
+      "description": "Join our team as a skilled Software Engineer with a salary range of $70,000 - $90,000. We're seeking individuals passionate about technology to contribute to our innovative projects.",
+      "postingDate": "2024-05-12",
+      "deadline": "2024-06-30",
+      "applicants": 0
+    },
+    {
+      "id": 1,
+      "bannerUrl": "https://example.com/banner1.jpg",
+      "jobTitle": "Software Engineer",
+      "loggedInUser": {
+        "name": "John Doe",
+        "email": "john@example.com"
+      },
+      "category": "Hybrid",
+      "salaryRange": "$70,000 - $90,000",
+      "description": "We're looking for a skilled Software Engineer to join us. This role offers a salary range of $70,000 - $90,000. Apply now and be part of our team.",
+      "postingDate": "2024-05-12",
+      "deadline": "2024-06-30",
+      "applicants": 0
+    },
+    {
+      "id": 3,
+      "bannerUrl": "https://example.com/banner3.jpg",
+      "jobTitle": "Marketing Manager",
+      "loggedInUser": {
+        "name": "Bob Johnson",
+        "email": "bob@example.com"
+      },
+      "category": "Hybrid",
+      "salaryRange": "$80,000 - $100,000",
+      "description": "Lead our marketing team as an experienced Marketing Manager. Salary range: $80,000 - $100,000. Join us and drive our marketing strategies to success.",
+      "postingDate": "2024-05-10",
+      "deadline": "2024-07-05",
+      "applicants": 0
+    },
+    {
+      "id": 5,
+      "bannerUrl": "https://example.com/banner5.jpg",
+      "jobTitle": "Data Analyst",
+      "loggedInUser": {
+        "name": "Michael Clark",
+        "email": "michael@example.com"
+      },
+      "category": "Remote",
+      "salaryRange": "$60,000 - $80,000",
+      "description": "We're seeking a talented Data Analyst to join our analytics team remotely. Salary range: $60,000 - $80,000. Apply now and help drive data-driven decisions.",
+      "postingDate": "2024-05-08",
+      "deadline": "2024-06-28",
+      "applicants": 0
+    },
+    {
+      "id": 5,
+      "bannerUrl": "https://example.com/banner5.jpg",
+      "jobTitle": "Data Analyst",
+      "loggedInUser": {
+        "name": "Michael Clark",
+        "email": "michael@example.com"
+      },
+      "category": "Part-time",
+      "salaryRange": "$60,000 - $80,000",
+      "description": "We're seeking a talented Data Analyst to join our analytics team part-time. Salary range: $60,000 - $80,000. Apply now and be part of our exciting projects.",
+      "postingDate": "2024-05-08",
+      "deadline": "2024-06-28",
+      "applicants": 0
+    },
+    {
+      "id": 10,
+      "bannerUrl": "https://example.com/banner10.jpg",
+      "jobTitle": "Web Developer",
+      "loggedInUser": {
+        "name": "Olivia Harris",
+        "email": "olivia@example.com"
+      },
+      "category": "Part-time",
+      "salaryRange": "$60,000 - $80,000",
+      "description": "Join our development team part-time as a skilled Web Developer with a salary of $60,000 - $80,000. Apply now and contribute to our projects.",
+      "postingDate": "2024-05-03",
+      "deadline": "2024-06-27",
+      "applicants": 0
+    },
+    {
+      "id": 10,
+      "bannerUrl": "https://example.com/banner10.jpg",
+      "jobTitle": "Web Developer",
+      "loggedInUser": {
+        "name": "Olivia Harris",
+        "email": "olivia@example.com"
+      },
+      "category": "Remote",
+      "salaryRange": "$60,000 - $80,000",
+      "description": "We're seeking a skilled Web Developer to join our remote team. Salary: $60,000 - $80,000. Apply now and be part of our innovative projects.",
+      "postingDate": "2024-05-03",
+      "deadline": "2024-06-27",
+      "applicants": 0
+    },
+    {
+      "id": 11,
+      "bannerUrl": "https://example.com/banner11.jpg",
+      "jobTitle": "Financial Analyst",
+      "loggedInUser": {
+        "name": "William Martin",
+        "email": "william@example.com"
+      },
+      "category": "On Site",
+      "salaryRange": "$70,000 - $90,000",
+      "description": "Join our finance team as a Financial Analyst with a salary range of $70,000 - $90,000. Apply now and contribute to our financial success.",
+      "postingDate": "2024-05-02",
+      "deadline": "2024-06-18",
+      "applicants": 0
+    }
+  ]
+  
