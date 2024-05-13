@@ -1,7 +1,6 @@
 [
     {
-      "id": 1,
-      "bannerUrl": "https://example.com/banner1.jpg",
+      "bannerUrl": "https://i.ibb.co/hBvw8sV/cty14.png",
       "jobTitle": "Software Engineer",
       "loggedInUser": {
         "name": "John Doe",
@@ -15,8 +14,7 @@
       "applicants": 0
     },
     {
-      "id": 1,
-      "bannerUrl": "https://example.com/banner1.jpg",
+      "bannerUrl": "https://i.ibb.co/NZ0vhfc/cty6.png",
       "jobTitle": "Software Engineer",
       "loggedInUser": {
         "name": "John Doe",
@@ -30,8 +28,7 @@
       "applicants": 0
     },
     {
-      "id": 3,
-      "bannerUrl": "https://example.com/banner3.jpg",
+      "bannerUrl": "https://i.ibb.co/1nMd6Vf/cty12.png",
       "jobTitle": "Marketing Manager",
       "loggedInUser": {
         "name": "Bob Johnson",
@@ -45,8 +42,7 @@
       "applicants": 0
     },
     {
-      "id": 5,
-      "bannerUrl": "https://example.com/banner5.jpg",
+      "bannerUrl": "https://i.ibb.co/NTt1wDK/cty3.png",
       "jobTitle": "Data Analyst",
       "loggedInUser": {
         "name": "Michael Clark",
@@ -60,8 +56,7 @@
       "applicants": 0
     },
     {
-      "id": 5,
-      "bannerUrl": "https://example.com/banner5.jpg",
+      "bannerUrl": "https://i.ibb.co/Gn1Dymf/cty11.png",
       "jobTitle": "Data Analyst",
       "loggedInUser": {
         "name": "Michael Clark",
@@ -75,8 +70,7 @@
       "applicants": 0
     },
     {
-      "id": 10,
-      "bannerUrl": "https://example.com/banner10.jpg",
+      "bannerUrl": "https://i.ibb.co/sJDW0SY/cty4.png",
       "jobTitle": "Web Developer",
       "loggedInUser": {
         "name": "Olivia Harris",
@@ -90,8 +84,7 @@
       "applicants": 0
     },
     {
-      "id": 10,
-      "bannerUrl": "https://example.com/banner10.jpg",
+      "bannerUrl": "https://i.ibb.co/2shxKpx/cty7.png",
       "jobTitle": "Web Developer",
       "loggedInUser": {
         "name": "Olivia Harris",
@@ -105,8 +98,35 @@
       "applicants": 0
     },
     {
-      "id": 11,
-      "bannerUrl": "https://example.com/banner11.jpg",
+      "bannerUrl": "https://i.ibb.co/fXvXF5M/cty9.png",
+      "jobTitle": "Financial Analyst",
+      "loggedInUser": {
+        "name": "William Martin",
+        "email": "william@example.com"
+      },
+      "category": "On Site",
+      "salaryRange": "$70,000 - $90,000",
+      "description": "Join our finance team as a Financial Analyst with a salary range of $70,000 - $90,000. Apply now and contribute to our financial success.",
+      "postingDate": "2024-05-02",
+      "deadline": "2024-06-18",
+      "applicants": 0
+    },
+    {
+      "bannerUrl": "https://i.ibb.co/fC9p64P/cty15.png",
+      "jobTitle": "Financial Analyst",
+      "loggedInUser": {
+        "name": "William Martin",
+        "email": "william@example.com"
+      },
+      "category": "On Site",
+      "salaryRange": "$70,000 - $90,000",
+      "description": "Join our finance team as a Financial Analyst with a salary range of $70,000 - $90,000. Apply now and contribute to our financial success.",
+      "postingDate": "2024-05-02",
+      "deadline": "2024-06-18",
+      "applicants": 0
+    },
+    {
+      "bannerUrl": "https://i.ibb.co/R0GDmjf/cty16.png",
       "jobTitle": "Financial Analyst",
       "loggedInUser": {
         "name": "William Martin",

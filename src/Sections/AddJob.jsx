@@ -63,7 +63,7 @@ const AddJob = () => {
             </div>
 
             <div className="mt-5 mb-10 w-full flex justify-center">
-            <button type="submit"  className="bg-cyan-700 text-white font-semibold text-xl px-8 py-2 rounded-md">Add Item</button>
+            <button type="submit"  className="bg-indigo-700 text-white font-semibold text-xl px-8 py-2 rounded-md">Add Item</button>
             </div>
         </form>
     </div>

@@ -1,17 +1,31 @@
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom"
 
 const DetailsPage = () => {
+  const {id} = useParams()
+  const [alljobs2, setAllJobs2] = useState([]);
+	useEffect(() => {
+		fetch("http://localhost:5000/jobs")
+		.then((res) => res.json())
+		.then((data) => {
+			setAllJobs2(data)
+		})
+	}, [])
+  const getJob = alljobs2.filter(item => item._id === id);
+  const getItem = getJob[0] || {}
+
   return (
     <div className="contain flex pt-10 2xl:pt-16 gap-10 2xl:gap-20">
       <div className="basis-1/2">
         <img src="/src/assets/images/cty2.png" alt="" className="w-24" />
-        <p className="mt-5 2xl:text-lg">Posted By: Monjur Hossen</p>
-        <h1 className="text-xl 2xl:text-2xl">Job Title: <span className="text-indigo-700 font-semibold">Software Engineer</span></h1>
-        <h1 className="text-lg 2xl:text-xl">Job Type: <span className="font-semibold">Remote</span></h1>
-        <h1 className="text-lg 2xl:text-xl">Salery Range: <span className="font-semibold">$30,000 - $40,000 /year</span></h1>
-        <h1 className="text-lg 2xl:text-xl">Description: <span className="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ipsum perspiciatis tempora et sit ipsa consequatur vero aperiam temporibus dolores. Accusantium qui nulla excepturi quod libero! Laudantium porro non facere.</span></h1>
-        <h1 className="my-2 text-lg 2xl:text-2xl font-semibold">Number of Applicants: 0</h1>
-        <h1 className="mt-3 text-lg 2xl:text-xl">Posted on: <span className="font-semibold">05/05/2024</span></h1>
-        <h1 className="text-lg 2xl:text-xl">Deadline: <span className="text-red-500 font-semibold">24/05/2024</span></h1>
+        <p className="mt-5 2xl:text-lg">Posted By: {getItem.loggedInUser?.name}</p>
+        <h1 className="text-xl 2xl:text-2xl">Job Title: {getItem?.jobTitle}<span className="text-indigo-700 font-semibold"></span></h1>
+        <h1 className="text-lg 2xl:text-xl">Job Type: {getItem?.category}</h1>
+        <h1 className="text-lg 2xl:text-xl">Salery Range: <span className="font-semibold">{getItem?.salaryRange} /year</span></h1>
+        <h1 className="text-lg 2xl:text-xl">Description: <span className="text-gray-700">{getItem?.description}</span></h1>
+        <h1 className="my-2 text-lg 2xl:text-2xl font-semibold">Number of Applicants: {getItem?.applicants}</h1>
+        <h1 className="mt-3 text-lg 2xl:text-xl">Posted on: <span className="font-semibold">{getItem?.postingDate}</span></h1>
+        <h1 className="text-lg 2xl:text-xl">Deadline: <span className="text-red-500 font-semibold">{getItem?.deadline}</span></h1>
       </div>
       <div className="basis-1/2">
         <h1 className="text-center text-2xl 2xl:text-[2.3rem] font-semibold">Want to <span className="text-indigo-700">Apply</span> for this <span className="text-indigo-700">Job</span></h1>

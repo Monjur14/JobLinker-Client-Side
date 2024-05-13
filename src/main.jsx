@@ -19,6 +19,7 @@ import Blog1 from './Sections/Blog1.jsx'
 import Blog2 from './Sections/Blog2.jsx'
 import Blog3 from './Sections/Blog3.jsx'
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -39,7 +40,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/alljobs',
-        element: <AllJobs/>
+        element: <AllJobs/>,
+        loader: () => fetch(`${import.meta.env.API_URL}/jobs`),
       },
       {
         path: '/addjob',
@@ -62,7 +64,7 @@ const router = createBrowserRouter([
         element: <AppliedJobs/>
       },
       {
-        path: '/details',
+        path: '/details/:id',
         element: <DetailsPage/>
       },
       {

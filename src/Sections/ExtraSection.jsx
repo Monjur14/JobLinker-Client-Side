@@ -46,7 +46,7 @@ const ExtraSection = () => {
             <h1 data-aos="zoom-in-left" className="text-[2.5rem] 2xl:text-[3.5rem] leading-tight font-semibold mb-10">Get World <span className="text-indigo-700">1500+</span> Talented People in one place</h1>
             <p data-aos="zoom-in-left" className="text-sm 2xl:text-lg">JobLinker is your trusted partner in navigating the vast landscape of career possibilities. Our platform connects you with the best and most preferred jobs in various industries, ensuring a seamless experience as you embark on your professional journe</p>
             <p data-aos="zoom-in-left" className="text-sm mt-5 mb-8 2xl:text-lg">Join our community of job seekers who are ready to take the next step in their careers. Sign up now and let JobLinker help you find the job of your dreams!</p>
-            <button data-aos="zoom-in-left" className="w-44 text-white py-1 2xl:py-2 rounded-2xl text-lg font-semibold cursor-pointer bg-indigo-700">About us</button>
+            <button data-aos="zoom-in-left" className="w-44 text-white py-1 2xl:py-2 rounded-lg text-lg font-semibold cursor-pointer bg-indigo-700">About us</button>
             </div>
         </div>
       </div>
