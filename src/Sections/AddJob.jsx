@@ -1,10 +1,73 @@
+import { ToastContainer, toast } from "react-toastify";
 import UseAuth from "../CustomHook/UseAuth";
 const AddJob = () => {
   const { user } = UseAuth()
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent default form submission behavior
+
+    const form = e.target;
+    const userName = user.displayName;
+    const userEmail = user.email;
+    const bannerUrl = form.image.value;
+    const jobTitle = form.job_title.value;
+    const category = form.category_Name.value;
+    const salaryRange = form.salery.value;
+    const description = form.description.value;
+    const postingDate = form.posting_date.value;
+    const deadline = form.deadline.value;
+
+    const addJob = {
+        bannerUrl,
+        jobTitle,
+        loggedInUser: {
+            name: userName,
+            email: userEmail
+        },
+        category,
+        salaryRange,
+        description,
+        postingDate,
+        deadline,
+        applicants: 0
+    }
+
+    fetch("http://localhost:5000/jobs", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(addJob)
+})
+.then((res) => {
+    if (!res.ok) {
+        throw new Error(`Failed to add job: ${res.status} ${res.statusText}`);
+    }
+    return res.json();
+})
+.then((data) => {
+    console.log(data)
+    if(data.insertedId){
+        toast.success("Successfully Added");
+    }
+})
+.catch(error => {
+    console.error('Error adding job:', error);
+    toast.error("Failed to add job");
+});
+form.image.value = "";
+form.job_title.value = "";
+form.category_Name.value = "";
+form.salery.value = "";
+form.description.value = "";
+form.posting_date.value = "";
+form.deadline.value = "";
+}
+
   return (
     <div className="contain">
         <h1 className="text-4xl font-bold text-center mt-5">Add a Job</h1>
-        <form className="mt-6 px-2 md:mx-3 lg:px-0">
+        <form className="mt-6 px-2 md:mx-3 lg:px-0" onSubmit={handleSubmit}>
 
             <div className="flex gap-5 flex-col md:flex-row">
                 <div className="w-full">
@@ -30,7 +93,7 @@ const AddJob = () => {
                 </div>  
                 <div className="w-full">
                     <label htmlFor="salery" className="text-lg font-bold cursor-pointer">Salery Range</label>
-                    <input type="text" name="salery" id="salery" className="border border-gray-500 text-lg p-2 rounded-md w-full"/>
+                    <input type="text" name="salery" id="salery" placeholder="$60,000 - $80,000 (Give like this)" className="border border-gray-500 text-lg p-2 rounded-md w-full"/>
                 </div>                
             </div>
             
@@ -66,6 +129,7 @@ const AddJob = () => {
             <button type="submit"  className="bg-indigo-700 text-white font-semibold text-xl px-8 py-2 rounded-md">Add Item</button>
             </div>
         </form>
+        <ToastContainer/>
     </div>
   )
 }
