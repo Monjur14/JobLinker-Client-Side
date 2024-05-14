@@ -7,6 +7,7 @@ import Home from './Sections/Home.jsx'
 import NotFound from './Components/NotFound.jsx'
 import Login from './Components/Login.jsx'
 import RegisterPage from './Components/RegisterPage.jsx'
+import PrivateRoute from './Components/PrivateRoute.jsx'
 import FirebaseProvider from './FirebaseProvider/FirebaseProvider.jsx'
 import AllJobs from './Sections/AllJobs.jsx'
 import AddJob from './Sections/AddJob.jsx'
@@ -18,6 +19,7 @@ import DetailsPage from './Sections/DetailsPage.jsx'
 import Blog1 from './Sections/Blog1.jsx'
 import Blog2 from './Sections/Blog2.jsx'
 import Blog3 from './Sections/Blog3.jsx'
+import Update from './Sections/Update.jsx'
 
 
 const router = createBrowserRouter([
@@ -40,16 +42,15 @@ const router = createBrowserRouter([
       },
       {
         path: '/alljobs',
-        element: <AllJobs/>,
-        loader: () => fetch(`${import.meta.env.API_URL}/jobs`),
+        element: <PrivateRoute><AllJobs/></PrivateRoute>
       },
       {
         path: '/addjob',
-        element: <AddJob/>
+        element: <PrivateRoute><AddJob/></PrivateRoute>
       },
       {
         path: "/myjobs",
-        element: <MyJobs/>
+        element: <PrivateRoute><MyJobs/></PrivateRoute>
       },
       {
         path: "/blogs",
@@ -57,15 +58,15 @@ const router = createBrowserRouter([
       },
       {
         path: '/userprofile',
-        element: <UserProfile/>
+        element: <PrivateRoute><UserProfile/></PrivateRoute>
       },
       {
         path: "/appliedjobs",
-        element: <AppliedJobs/>
+        element: <PrivateRoute><AppliedJobs/></PrivateRoute>
       },
       {
         path: '/details/:id',
-        element: <DetailsPage/>
+        element: <PrivateRoute> <DetailsPage/></PrivateRoute>
       },
       {
         path: "/blogs/blog1",
@@ -79,6 +80,10 @@ const router = createBrowserRouter([
         path: "/blogs/blog3",
         element: <Blog3/>
       },
+      {
+        path: "/update/:id",
+        element: <PrivateRoute><Update/></PrivateRoute>
+      }
     ]
   }
 ])

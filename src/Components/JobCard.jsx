@@ -17,7 +17,7 @@ const JobCard = ({key, postedBy, jobTitle, postedDate, type, salery, deadLine, i
 		}
 	}
   return (
-    <div className="relative" key={key}>
+    <div className="relative w-[95%] md:w-[96%] lg:w-full" key={key}>
                 <div className="w-full h-full absolute bg-gray-200 top-4 -z-20 -right-5 rounded-bl-md rounded-tr-md rounded-br-xl"></div>
     <div className="w-full border border-gray-400 rounded-lg bg-white p-5">
       <div className="flex gap-4">
@@ -25,26 +25,26 @@ const JobCard = ({key, postedBy, jobTitle, postedDate, type, salery, deadLine, i
           <img
             src={img}
             alt=""
-            className="w-20 h-20 object-covert"
+            className="w-14 h-14 md:w-20 md:h-20 object-covert"
           />
         </div>
         <div>
-          <h2 className="text-indigo-500">Posted By: {postedBy}</h2>
-          <h1 className="text-2xl font-semibold">{jobTitle}</h1>
-          <div className="flex items-center gap-1">
+          <h2 className="text-indigo-500 text-sm md:text-base">Posted By: {postedBy}</h2>
+          <h1 className="text-xl md:text-2xl font-semibold">{jobTitle}</h1>
+          <div className="flex items-center gap-1 text-sm md:text-base">
             <BsCalendar2Date />
             <p>Posted Date: {postedDate}</p>
           </div>
         </div>
       </div>
       <div>
-        <div className="flex justify-between">
-        <div className={`${getColor(type)} px-7 text-lg rounded-2xl inline-block mt-5 text-white`}>
+        <div className="inline-block md:flex justify-between flex-col md:flex-row">
+        <div className={`${getColor(type)} px-7 text-base md:text-lg rounded-2xl inline-block mt-2 md:mt-5 text-white`}>
           <h1>{type}</h1>
         </div>
 
         <Link to={`/details/${id}`}>        
-        <div className="bg-indigo-400 px-7 text-lg rounded-2xl flex items-center cursor-pointer gap-2 mt-5 text-white">
+        <div className="bg-indigo-400 px-7 text-base md:text-lg rounded-2xl flex items-center cursor-pointer gap-2 mt-2 md:mt-5 text-white">
         <FaExternalLinkAlt />
         <Link to={`/details/${id}`}>
         <button>
@@ -56,13 +56,13 @@ const JobCard = ({key, postedBy, jobTitle, postedDate, type, salery, deadLine, i
         
 
         </div>
-        <hr className="mt-5 border border-gray-300" />
-        <div className="flex justify-between mt-3">
-          <div className="flex items-center gap-1 text-lg">
+        <hr className="mt-3 md:mt-5 border border-gray-300" />
+        <div className="flex justify-between mt-3 flex-col md:flex-row">
+          <div className="flex items-center gap-1 text-sm  md:text-lg">
             <LuCircleDollarSign />
             <h1>{salery} /year</h1>
           </div>
-          <div className="flex items-center gap-1 text-lg">
+          <div className="flex items-center gap-1 text-sm md:text-lg">
             <IoTimerSharp />
             <h1>Dateline: {deadLine}</h1>
           </div>

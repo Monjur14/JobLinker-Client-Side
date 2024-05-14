@@ -4,7 +4,7 @@ const Blog2 = () => {
   return (
     <div className='contain'>
       <img src="/src/assets/images/express.png" alt="" className="w-full h-[300px] object-cover" />
-      <div>
+      <div className="px-2 md:px-3 lg:px-0">
       <h2 className="text-2xl font-bold my-4">What is Express.js?</h2>
       
       <p>Express.js, commonly referred to as Express, is a minimal and flexible web application framework for Node.js. It provides a robust set of features for building web and mobile applications.</p>

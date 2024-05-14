@@ -3,7 +3,7 @@ const Blog3 = () => {
   return (
     <div className="contain">
       <img src="/src/assets/images/nextjs.webp" alt="" className="w-full h-[300px] object-cover" />
-      <div>
+      <div className="px-2 md:px-3 lg:px-0">
       <h2 className="text-2xl font-bold my-5">What is Next.js?</h2>
       
       <p>Next.js is a React framework for building server-side rendered (SSR) and statically generated (SSG) web applications. It is built on top of React, providing many powerful features to streamline the development process.</p>

@@ -3,7 +3,7 @@ const Blog1 = () => {
   return (
     <div className="contain">
         <img src="/src/assets/images/jwt-main.png" alt="" className="w-full h-[300px] object-cover" />
-        <div>
+        <div className="px-2 md:px-3 lg:px-0">
             <h1 className="text-2xl font-semibold my-4">What is an access token and refresh token? How do they work and where should we store them on the client side?</h1>
             <div className="text-lg">
       <h2>Understanding Access Tokens and Refresh Tokens in Authentication</h2>

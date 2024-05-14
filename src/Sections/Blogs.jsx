@@ -2,8 +2,8 @@ import { Link } from "react-router-dom"
 
 const Blogs = () => {
   return (
-    <div className="contain pt-10 flex flex-col gap-5">
-	<div className="max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm border">
+    <div className="contain pt-10 flex flex-col gap-5 px-2 md:px-3 lg:px-0">
+	<div className="max-w-4xl px-4 md:px-10 py-6 mx-auto rounded-lg shadow-sm border">
 		<div className="flex items-center justify-between">
 			<span className="text-sm ">Jun 12, 2024</span>
 			<a rel="noopener noreferrer" href="#" className="px-2 py-1 font-bold rounded ">Javascript</a>
@@ -24,7 +24,7 @@ const Blogs = () => {
 			</div>
 		</div>
 	</div>
-	<div className="max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm border">
+	<div className="max-w-4xl px-4 md:px-10 py-6 mx-auto rounded-lg shadow-sm border">
 		<div className="flex items-center justify-between">
 			<span className="text-sm ">Jun 12, 2024</span>
 			<a rel="noopener noreferrer" href="#" className="px-2 py-1 font-bold rounded ">Javascript</a>
@@ -45,7 +45,7 @@ const Blogs = () => {
 			</div>
 		</div>
 	</div>
-	<div className="max-w-4xl px-10 py-6 mx-auto rounded-lg shadow-sm border">
+	<div className="max-w-4xl px-4 md:px-10 py-6 mx-auto rounded-lg shadow-sm border">
 		<div className="flex items-center justify-between">
 			<span className="text-sm ">Jun 12, 2024</span>
 			<a rel="noopener noreferrer" href="#" className="px-2 py-1 font-bold rounded ">Javascript</a>
