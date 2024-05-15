@@ -46,3 +46,4 @@ JobLinker is a job-based website that connects job seekers with employers. It pr
 - **sweetalert2@11.10.8**: Library for displaying custom modal windows.
 
 
+
