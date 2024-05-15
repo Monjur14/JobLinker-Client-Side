@@ -34,11 +34,11 @@ const Sponsors = () => {
         </div>
       </div>
       <div className='flex items-center gap-10 flex-wrap justify-center mt-16'>
-        <img  data-aos="flip-left" src="/src/assets/images/w1.png" alt="" className='w-44'/>
-        <img data-aos="flip-right" src="/src/assets/images/w2.png" alt="" className='w-44'/>
-        <img data-aos="flip-up" src="/src/assets/images/w3.png" alt="" className='w-44 hidden 2xl:block'/>
-        <img data-aos="flip-left" src="/src/assets/images/w5.png" alt="" className='w-44'/>
-        <img data-aos="flip-right" src="/src/assets/images/w6.png" alt="" className='w-44'/>
+        <img  data-aos="flip-left" src="w1.png" alt="" className='w-44'/>
+        <img data-aos="flip-right" src="w2.png" alt="" className='w-44'/>
+        <img data-aos="flip-up" src="w3.png" alt="" className='w-44 hidden 2xl:block'/>
+        <img data-aos="flip-left" src="w5.png" alt="" className='w-44'/>
+        <img data-aos="flip-right" src="w6.png" alt="" className='w-44'/>
       </div>
     </div>
     <div className='w-full h-[500px] bg-last px-2 md:px-3'>

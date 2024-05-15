@@ -32,7 +32,7 @@ const AddJob = () => {
         applicants: 0
     }
 
-    fetch("http://localhost:5000/jobs", {
+    fetch("https://joblinker-server-three.vercel.app/jobs", {
     method: "POST",
     headers: {
         "Content-Type": "application/json"

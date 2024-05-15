@@ -3,13 +3,14 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import JobCard from "../Components/JobCard";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion"
 
 
 const Categories = () => {
     const [activeTab, setActiveTab] = useState(0);
     const [alljobs, setAllJobs] = useState([]);
 	useEffect(() => {
-		fetch("http://localhost:5000/jobs")
+		fetch("https://joblinker-server-three.vercel.app/jobs")
 		.then((res) => res.json())
 		.then((data) => {
 			setAllJobs(data)
@@ -25,7 +26,7 @@ const Categories = () => {
     <>
     <div className="contain pt-10 px-2">
         <div>
-            <h1 className="text-center text-[1.9rem] md:text-[3rem] font-bold">Category</h1>
+            <motion.h1 initial={{ opacity: 0, scale: 0.8 }}whileInView={{ opacity: 1, scale: 1 }}  transition={{ duration: 1 }} className="text-center text-[1.9rem] md:text-[3rem] font-bold">Category</motion.h1>
         </div>
         <div>
             <Tabs className="modern-tabs mt-3 md:mt-5">

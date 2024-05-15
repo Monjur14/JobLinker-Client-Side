@@ -11,7 +11,7 @@ const Update = () => {
     useEffect(() => {
       const fetchData = async () => {
           try {
-              const response = await fetch("http://localhost:5000/jobs");
+              const response = await fetch("https://joblinker-server-three.vercel.app/jobs");
               const data = await response.json();
               const updateItem = data.filter((item) => item._id === id)
               setUpdate(updateItem);
@@ -21,6 +21,7 @@ const Update = () => {
       };
       fetchData();
   }, []);
+
 
   const handleUpdate = (e) => {
     e.preventDefault();
@@ -50,7 +51,7 @@ const Update = () => {
         applicants
     };
 
-    fetch(`http://localhost:5000/jobs/${id}`, {
+    fetch(`https://joblinker-server-three.vercel.app/jobs/${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"
@@ -89,7 +90,7 @@ const Update = () => {
             <div className="flex gap-5 mt-5 flex-col md:flex-row">
                 <div className="w-full flex flex-col">
                     <label htmlFor="category_Name" className="text-lg font-bold cursor-pointer">Category</label>
-                    <select id="category_Name" name="category_Name" defaultValue={itemUpdate.category} className="border border-gray-500 text-lg p-2 rounded-md w-full">
+                    <select id="category_Name" name="category_Name" defaultValue={itemUpdate.category_Name} className="border border-gray-500 text-lg p-2 rounded-md w-full">
                         <option value="">Enter the Subcategory</option>
                         <option value="On-Site Job">On-Site Job</option>
                         <option value="Remote">Remote</option>

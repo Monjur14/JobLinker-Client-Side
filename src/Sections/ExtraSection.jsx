@@ -38,7 +38,7 @@ const ExtraSection = () => {
                 </div>
             </div>
         </div>
-        <img src="/src/assets/images/get-job-pic.png" alt=""  className="absolute top-10 md:right-60 md:top-8 lg:top-32 w-96 lg:-right-28 2xl:w-[34.4rem] 2xl:top-44 2xl:-right-40"/>
+        <img src="get-job-pic.png" alt=""  className="absolute top-10 md:right-60 md:top-8 lg:top-32 w-96 lg:-right-28 2xl:w-[34.4rem] 2xl:top-44 2xl:-right-40"/>
         </div>
         <div className="basis-3/5 bg-[#eaf1fb] px-2 pt-5 lg:pl-56 2xl:pl-80 flex flex-col justify-center">
             <div data-aos="zoom-in-left" className="max-w-[600px]">

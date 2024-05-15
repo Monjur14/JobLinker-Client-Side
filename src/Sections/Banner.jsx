@@ -28,7 +28,7 @@ const Banner = () => {
       }, []);
   return (
     <div className="w-full min-h-screen lg:h-screen bg-gradient relative -z-50">
-        <img src="/src/assets/images/bgpattern.png" alt=""  className="absolute w-full h-full"/>
+        <img src="bgpattern.png" alt=""  className="absolute w-full h-full"/>
       <div className="contain flex gap-0 lg:gap-5 h-full z-20 flex-col lg:flex-row items-center px-2 md:px-3 lg:px-0">
         <div className="basis-1/2 mb-20 z-20 mt-12 lg:mt-0">
             <h4 className="text-xl font-semibold text-indigo-800"  data-aos="zoom-in-right">We Have 300,000+ Live Jobs</h4>
@@ -58,7 +58,7 @@ const Banner = () => {
             </div>
         </div>
         <div className="basis-1/2 z-20">
-            <img data-aos="flip-left" src="/src/assets/images/slider4.png" alt=""  className="w-full"/>
+            <img data-aos="flip-left" src="slider4.png" alt=""  className="w-full"/>
         </div>
       </div>
     </div>

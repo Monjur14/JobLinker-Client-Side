@@ -18,7 +18,7 @@ const Blogs = () => {
       </Link>
 			<div>
 				<p rel="noopener noreferrer" className="flex items-center">
-					<img src="/src/assets/images/monjur.png" alt="avatar" className="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500" />
+					<img src="monjur.png" alt="avatar" className="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500" />
 					<span>Monjur Hossen</span>
 				</p>
 			</div>
@@ -39,7 +39,7 @@ const Blogs = () => {
       </Link>
 			<div>
 				<p rel="noopener noreferrer" className="flex items-center">
-					<img src="/src/assets/images/monjur.png" alt="avatar" className="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500" />
+					<img src="monjur.png" alt="avatar" className="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500" />
 					<span >Monjur Hossen</span>
 				</p>
 			</div>
@@ -60,7 +60,7 @@ const Blogs = () => {
       </Link>
 			<div>
 				<p rel="noopener noreferrer" className="flex items-center">
-					<img src="/src/assets/images/monjur.png" alt="avatar" className="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500" />
+					<img src="monjur.png" alt="avatar" className="object-cover w-10 h-10 mx-4 rounded-full dark:bg-gray-500" />
 					<span >Monjur Hossen</span>
 				</p>
 			</div>

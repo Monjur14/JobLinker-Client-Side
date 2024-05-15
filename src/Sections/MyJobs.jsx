@@ -8,7 +8,7 @@ const MyJobs = () => {
   const { user } = UseAuth()
 
   useEffect(() => {
-    fetch("http://localhost:5000/jobs")
+    fetch("https://joblinker-server-three.vercel.app/jobs")
     .then((res) => res.json())
     .then((data) => {
       const newArr = data.filter(item => item.loggedInUser.email === user.email)

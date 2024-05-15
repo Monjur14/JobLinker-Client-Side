@@ -31,7 +31,7 @@ const MyJobsCard = ({key, postedBy, jobTitle, postedDate, type, salery, deadLine
           confirmButtonText: "Yes, delete it!"
         }).then((result) => {
           if (result.isConfirmed) {
-            fetch(`http://localhost:5000/jobs/${id}`, {
+            fetch(`https://joblinker-server-three.vercel.app/jobs/${id}`, {
               method: "DELETE",
             })
             .then(res => res.json())

@@ -24,10 +24,10 @@ const Navbar = () => {
     }
     const {logout, user} = UseAuth()
   return (
-    <div className="w-full shadow-md bg-white shadow-gray-100 zIndex">
+    <div className="w-full  bg-white  zIndex">
     <div className="contain flex justify-between items-center py-2 lg:py-3 px-3 2xl:py-4 lg:px-0">
       <Link to={"/"} data-tooltip-id="my-tooltip" data-tooltip-content="JobLinker">
-      <img src="/src/assets/images/logo.png" alt="" className="w-36 md:w-48 2xl:w-48"/>
+      <img src="logo.png" alt="" className="w-36 md:w-48 2xl:w-48"/>
       </Link>
       <Tooltip id="my-tooltip" className="z-50"/>
       <ul className="gap-5 items-center text-xl hidden lg:flex"> 
@@ -41,7 +41,7 @@ const Navbar = () => {
       </ul>
       <div className="flex gap-4">
       <Tooltip id="my-tooltip2" className="z-50"/>
-      <label className="swap swap-rotate">
+      <label className="swap swap-rotate cursor-pointer">
   
   {/* this hidden checkbox controls the state */}
   <input type="checkbox" className="theme-controller hidden lg:block" value="synthwave"  onClick={toggleTheme}/>

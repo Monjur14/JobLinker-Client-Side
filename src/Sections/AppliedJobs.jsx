@@ -11,7 +11,7 @@ const AppliedJobs = () => {
   const { user } = UseAuth()
 
   useEffect(() => {
-    fetch("http://localhost:5000/apply")
+    fetch("https://joblinker-server-three.vercel.app/apply")
     .then((res) => res.json())
     .then((data) => {
       const newArr = data.filter(item => item.applicantEmail === user.email)
@@ -30,7 +30,7 @@ const AppliedJobs = () => {
   console.log(partTimeJobs)
 
   return (
-    <div className="contain pt-10 px-2 md:px-3 lg:px-0">
+    <div className="contain pt-5 px-2 md:px-3 lg:px-0">
         <div>
             <h1 className="text-center text-[2rem] lg:text-[2.5rem] font-bold">Filter by Category</h1>
         </div>

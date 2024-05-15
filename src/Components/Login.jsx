@@ -7,6 +7,7 @@ import { IoEyeOffOutline } from "react-icons/io5";
 import { IoEyeOutline } from "react-icons/io5";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import axios from "axios";
 
 const Login = () => {
 	const [show, setShow] = useState(false)
@@ -24,7 +25,18 @@ const Login = () => {
 		const {email, password} = data;
 		signInUser(email, password)
 		.then((result) => {
+			const loggedInUser = result.user
 			toast.success("Successfuly Login")
+			const user = {
+				email
+			}
+			//get access token
+			axios.post("https://joblinker-server-three.vercel.app/jwt", user)
+			.then((res) => {
+				console.log(res.data)
+			})
+
+
 		})
 		.catch((error) => {
 			toast.error("Please enter a valid email & password")
