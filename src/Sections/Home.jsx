@@ -7,10 +7,11 @@ const Home = () => {
   return (
     <div>
       <Banner/>
-      <Categories/>
+      <Categories/>     
       <ExtraSection/>
       <Sponsors/>
     </div>
+    
   );
 };
 
