@@ -22,6 +22,9 @@ JobLinker is a job-based website that connects job seekers with employers. It pr
 4. **Post a Job:**
    - Employers can post job openings with detailed descriptions.
    - Specify job requirements, responsibilities, location, and more.
+5. **Update a Job:**
+   - Employers have the capability to update job openings with comprehensive descriptions.
+   - Specify job requirements, responsibilities, location, and other pertinent details with precision.
 
 
 
@@ -44,12 +47,3 @@ JobLinker is a job-based website that connects job seekers with employers. It pr
 - **react-toastify@10.0.5**: Library for displaying toast notifications in React applications.
 - **react-tooltip@5.26.4**: Library for adding tooltips to elements.
 - **sweetalert2@11.10.8**: Library for displaying custom modal windows.
-
-
-
-
-
-
-
-
-
