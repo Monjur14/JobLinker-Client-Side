@@ -44,3 +44,4 @@ JobLinker is a job-based website that connects job seekers with employers. It pr
 - **react-toastify@10.0.5**: Library for displaying toast notifications in React applications.
 - **react-tooltip@5.26.4**: Library for adding tooltips to elements.
 - **sweetalert2@11.10.8**: Library for displaying custom modal windows.
+
