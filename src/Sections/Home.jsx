@@ -10,9 +10,7 @@ const Home = () => {
       <Categories/>     
       <ExtraSection/>
       <Sponsors/>
-    </div>
-
-    
+    </div>    
   );
 };
 
