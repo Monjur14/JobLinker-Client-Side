@@ -95,7 +95,7 @@ const DetailsPage = () => {
   }
 
   return (
-    <div className="contain flex pt-10 2xl:pt-16 gap-10 2xl:gap-20">
+    <div className="contain flex pt-10 2xl:pt-16 gap-10 2xl:gap-20 flex-col lg:flex-row px-2 md:px-3 lg:px-0">
       <div className="basis-1/2">
         <img src={job.bannerUrl} alt="Job banner" className="w-24" />
         <p className="mt-5 2xl:text-lg">Posted By: {job.loggedInUser.name}</p>
