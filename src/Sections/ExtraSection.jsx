@@ -25,21 +25,24 @@ const ExtraSection = () => {
       }, []);
     return (
       <div className="w-full min-h-screen flex mt-14 md:mt-24 flex-col lg:flex-row">
+
+
         <div className="h-[70vh] md:h-[55vh] lg:h-screen lg:basis-2/5 bg-[rgb(0,40,96)] relative">
-        <div className=" absolute left-8 md:left-44 lg:left-72 2xl:left-[27rem] lg:-right-40 2xl:-right-56 top-20 lg:top-1/4 2xl:top-44 2xl:mt-20">
-        <div className="w-96 h-96 2xl:w-[35rem] 2xl:h-[35rem] border border-gray-300 rounded-full flex justify-center items-center relative rd ">
-                <div className="w-10 h-10 bg-orange-500 rounded-full absolute -right-5"></div>
-                <div className="w-5 h-5 bg-pink-500 rounded-full absolute  -bottom-2"></div>
-                <div className="w-8 h-8 bg-yellow-500 rounded-full absolute left-7 top-14 2xl:left-20"></div>
-                <div className="h-72 w-72 2xl:h-[26rem] 2xl:w-[26rem] bg-[#eaf1fb] rounded-full flex justify-center items-center -z-10">
-                    <div className="h-56 w-56 2xl:h-80 2xl:w-80 inline-block rounded-full bg-[#002860]">
-                        
-                    </div>
-                </div>
+    <div className="absolute right-8 md:right-60 lg:right-28 2xl:-right-56 ttop">
+        <div className="w-96 h-96 2xl:w-[35rem] 2xl:h-[35rem] border border-gray-300 rounded-full flex justify-center items-center relative rd">
+            <div className="w-10 h-10 bg-orange-500 rounded-full absolute -right-5"></div>
+            <div className="w-5 h-5 bg-pink-500 rounded-full absolute -bottom-2"></div>
+            <div className="w-8 h-8 bg-yellow-500 rounded-full absolute left-7 top-14 2xl:left-20"></div>
+            <div className="h-72 w-72 2xl:h-[26rem] 2xl:w-[26rem] bg-[#eaf1fb] rounded-full flex justify-center items-center -z-10">
+                <div className="h-56 w-56 2xl:h-80 2xl:w-80 inline-block rounded-full bg-[#002860]"></div>
             </div>
         </div>
-        <img src="get-job-pic.png" alt=""  className="absolute top-10 md:right-60 md:top-8 lg:top-32 w-96 lg:-right-28 2xl:w-[34.4rem] 2xl:top-44 2xl:-right-40"/>
-        </div>
+    </div>
+    <img src="get-job-pic.png" alt="" className="absolute md:right-60 w-96 lg:-right-28 2xl:w-[34.4rem] 2xl:-right-40 ttop -mt-12"/>
+</div>
+
+
+
         <div className="basis-3/5 bg-[#eaf1fb] px-2 pt-5 lg:pl-56 2xl:pl-80 flex flex-col justify-center">
             <div data-aos="zoom-in-left" className="max-w-[600px]">
             <h1 data-aos="zoom-in-left" className="text-indigo-700 text-lg lg:text-xl 2xl:text-2xl">Get Jobs</h1>

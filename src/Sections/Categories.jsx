@@ -3,17 +3,18 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import JobCard from "../Components/JobCard";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion"
 
 
 const Categories = () => {
     const [activeTab, setActiveTab] = useState(0);
     const [alljobs, setAllJobs] = useState([]);
+    const [loading, setLoading] = useState(true);
 	useEffect(() => {
 		fetch("https://joblinker-server-three.vercel.app/jobs")
 		.then((res) => res.json())
 		.then((data) => {
 			setAllJobs(data)
+            setTimeout(() => setLoading(false), 1200);
 		})
 	}, [])
 
@@ -26,7 +27,7 @@ const Categories = () => {
     <>
     <div className="contain pt-10 px-2">
         <div>
-            <motion.h1 initial={{ opacity: 0, scale: 0.8 }}whileInView={{ opacity: 1, scale: 1 }}  transition={{ duration: 1 }} className="text-center text-[1.9rem] md:text-[3rem] font-bold">Category</motion.h1>
+            <h1 className="text-center text-[1.9rem] md:text-[3rem] font-bold">Category</h1>
         </div>
         <div>
             <Tabs className="modern-tabs mt-3 md:mt-5">
@@ -51,11 +52,20 @@ const Categories = () => {
                 </div>
                 <div>
                     <TabPanel className="tab-panel">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-9 md:gap-16 mt-10">
+                        {/* <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-9 md:gap-16 mt-10">
+                            {showAllJobs.map((item) => (
+                                <JobCard key={item.key} img={item.bannerUrl} postedBy={item.loggedInUser.name} jobTitle={item.jobTitle} postedDate={item.postingDate} type={item.category} salery={item.salaryRange} deadLine={item.deadline} id={item._id}/>
+                            ))}                   
+                        </div> */}
+                        {
+                            loading ? <div className="flex justify-center items-center h-[50vh]">
+                            <div className="w-16 h-16 border-4 border-dashed rounded-full animate-spin dark:border-violet-600"></div>
+                          </div> : <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-9 md:gap-16 mt-10">
                             {showAllJobs.map((item) => (
                                 <JobCard key={item.key} img={item.bannerUrl} postedBy={item.loggedInUser.name} jobTitle={item.jobTitle} postedDate={item.postingDate} type={item.category} salery={item.salaryRange} deadLine={item.deadline} id={item._id}/>
                             ))}                   
                         </div>
+                        }
                     </TabPanel>
                     <TabPanel className="tab-panel">
                     <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-9 md:gap-16 mt-10">
