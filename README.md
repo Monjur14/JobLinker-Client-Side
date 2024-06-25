@@ -3,7 +3,7 @@
 **Description**
 JobLinker is a job-based website that connects job seekers with employers. It provides a platform for users to browse job listings, apply for jobs, and post job openings. Whether you're looking for a new career opportunity or seeking qualified candidates for your company, JobLinker simplifies the job search and hiring process.
 
-**Live Link**
+## Live Link
 [JobLinker](https://joblinker-14.vercel.app/)
 
 **Key Features**
