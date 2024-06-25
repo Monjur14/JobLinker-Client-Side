@@ -1,12 +1,13 @@
-**JobLinker**
+## JobLinker
 
-**Description**
+## Description
 JobLinker is a job-based website that connects job seekers with employers. It provides a platform for users to browse job listings, apply for jobs, and post job openings. Whether you're looking for a new career opportunity or seeking qualified candidates for your company, JobLinker simplifies the job search and hiring process.
 
 ## Live Link
 [JobLinker](https://joblinker-14.vercel.app/)
 
-**Key Features**
+
+## Key Features
 1. **User Authentication:**
    - Secure user signup, login, and logout functionality.
    - Personalized user profiles for managing job applications and postings.
@@ -28,7 +29,7 @@ JobLinker is a job-based website that connects job seekers with employers. It pr
 
 
 
-**NPM Packages Used**
+## NPM Packages Used
 
 - **@emotion/react@11.11.4**: Provides styling solutions for React components.
 - **aos@2.3.4**: Library for animated scrolling effects.
